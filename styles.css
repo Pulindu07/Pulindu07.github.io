@@ -1,30 +1,53 @@
-body{
+body {
     background-color: #e6ccb2;
-    padding: 8px;
 }
-.profile-photo{
-    height: 350px;
-    width: 350px;
+
+.btn{
+    width: 160px;
+    border: solid white 4px;
+}
+
+.container-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-photo {
+    height: 500px;
+    width: 500px;
     object-fit: cover;
     border-radius: 100%;
     border: solid 4px #ddb892;
-    
+    float: left;
+    flex-wrap: wrap;
+
 }
-.container{
+
+.container {
     align-items: center;
 }
 
-.nav-bar{
+.img-plus-heading {
+    padding: 10%;
+}
+
+.nav-bar {
     margin-bottom: 16px;
 }
 
-.heading{
+.heading {
     font-size: 29px;
     font-weight: bold;
 }
-.heading-p{
+
+.heading-p {
     color: white;
 }
-.heading .navbar-brand{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+.heading .navbar-brand {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text {
+    text-align: justify;
 }
