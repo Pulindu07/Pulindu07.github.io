@@ -12,27 +12,13 @@ body {
     justify-content: space-between;
 }
 
-.profile-photo {
-    height: 500px;
-    width: 500px;
-    object-fit: cover;
-    border-radius: 100%;
-    border: solid 4px #ddb892;
-    float: left;
-    flex-wrap: wrap;
-
-}
-
 .container {
     align-items: center;
 }
 
-.img-plus-heading {
-    padding: 10%;
-}
-
-.nav-bar {
-    margin-bottom: 16px;
+.greeting{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 60px;
 }
 
 .heading {
@@ -46,6 +32,28 @@ body {
 
 .heading .navbar-brand {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.img-plus-heading {
+    padding: 10%;
+}
+
+.nav-bar {
+    margin-bottom: 16px;
+}
+
+.para-title{
+    font-family: 'Nunito', sans-serif;
+}
+
+.profile-photo {
+    height: 500px;
+    width: 500px;
+    object-fit: cover;
+    border-radius: 100%;
+    border: solid 4px #ddb892;
+    float: left;
+    flex-wrap: wrap;
 }
 
 .text {
