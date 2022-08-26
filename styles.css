@@ -4,12 +4,14 @@ body {
 
 .btn {
     width: 160px;
-    border: solid white 4px;
+    border: solid white 1px;
+    border-radius:50px 50px 50px 50px;
 }
 
 .container-buttons {
     display: flex;
     justify-content: space-between;
+    margin-top: 36px;
 }
 
 .container {
