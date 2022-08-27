@@ -3,9 +3,10 @@ body {
 }
 
 .btn {
-    width: 160px;
+    width: 31%;
     border: solid white 1px;
-    border-radius:50px 50px 50px 50px;
+    border-radius: 50px 50px 50px 50px;
+    font-size: 25px;
 }
 
 .container-buttons {
@@ -26,9 +27,14 @@ body {
     text-align: center;
 }
 
+.footer-left-div, .footer-middle-div {
+    border-right: solid 2px white;
+}
+
 .greeting {
     font-family: 'Noto Sans', sans-serif;
     font-size: 60px;
+    /* font-size: 500%; */
 }
 
 .heading {
@@ -40,7 +46,7 @@ body {
     color: white;
 }
 
-.heading .navbar-brand {
+.heading, .navbar-brand {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -59,6 +65,7 @@ body {
 
 .para-title {
     font-family: 'Nunito', sans-serif;
+    font-size: 36px;
 }
 
 .profile-photo {
@@ -73,4 +80,35 @@ body {
 
 .text {
     text-align: justify;
+}
+
+
+@media (max-width: 768px) {
+
+    .btn {
+        font-size: 16px;
+    }
+
+    .footer-left-div, .footer-middle-div {
+        border-bottom: solid 2px white;
+        border-right: none;
+    }
+
+    .greeting {
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 46px;
+        /* font-size: 500%; */
+    }
+
+    .heading {
+        font-size: 19px;
+        font-weight: bold;
+    }
+
+    .para-title {
+        font-family: 'Nunito', sans-serif;
+        font-size: 29px;
+    }
+
+
 }
