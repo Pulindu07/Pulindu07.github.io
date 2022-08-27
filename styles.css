@@ -62,8 +62,8 @@ body {
 }
 
 .profile-photo {
-    height: 500px;
-    width: 500px;
+    height: 80%;
+    width: 100%;
     object-fit: cover;
     border-radius: 100%;
     border: solid 4px #ddb892;
