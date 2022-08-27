@@ -33,8 +33,8 @@ body {
 
 .greeting {
     font-family: 'Noto Sans', sans-serif;
-    font-size: 60px;
-    /* font-size: 500%; */
+    font-size: 58px;
+    margin-top: 9px;
 }
 
 .heading {
@@ -51,7 +51,7 @@ body {
 }
 
 .img-plus-heading {
-    padding: 10%;
+    padding: 5%;
 }
 
 .mail {
@@ -69,7 +69,7 @@ body {
 }
 
 .profile-photo {
-    height: 80%;
+    height: auto;
     width: 100%;
     object-fit: cover;
     border-radius: 100%;
@@ -83,7 +83,7 @@ body {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
 
     .btn {
         font-size: 16px;
