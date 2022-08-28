@@ -1,0 +1,170 @@
+body {
+    background-color: #e6ccb2;
+}
+
+.btn {
+    width: 31%;
+    border: solid white 1px;
+    border-radius: 50px 50px 50px 50px;
+    font-size: 25px;
+}
+
+.container-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 36px;
+}
+
+.container {
+    align-items: center;
+}
+
+.footer {
+    background-color: #e3c3a3;
+    position: relative;
+    bottom: 0;
+    padding: 3%;
+    text-align: center;
+}
+
+.footer-left-div,
+.footer-middle-div {
+    border-right: solid 2px white;
+}
+
+.greeting {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 58px;
+    margin-top: 9px;
+}
+
+.heading {
+    font-size: 29px;
+    font-weight: bold;
+}
+
+.heading-p {
+    color: white;
+}
+
+.heading,
+.navbar-brand {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.img-plus-heading {
+    padding: 5%;
+}
+
+.mail {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-bar {
+    margin-bottom: 16px;
+}
+
+.not-found{
+    margin: 2%;
+    background-image:linear-gradient(rgb(120, 120, 120),rgb(170, 170, 170)) ;
+    padding: 10% 35%;
+    text-align: center;
+}
+.not-found-heading{
+    font-family: 'Indie Flower', cursive;
+    font-size: 8rem;
+    font-weight: bold;
+}
+
+.para-title {
+    font-family: 'Nunito', sans-serif;
+    font-size: 36px;
+}
+
+.photo-div {
+    margin: 2% 0;
+}
+
+.profile-photo {
+    animation: 2s ease-out 0.2s 1 forwards forwards;
+    animation-name: slidein, borders;
+
+    border-radius: 100%;
+    flex-wrap: wrap;
+    float: left;
+    height: auto;
+    object-fit: cover;
+    width: 100%;
+}
+
+.text-div {
+    animation: 2s ease-out 0.5s 1 forwards forwards;
+    animation-name: slidein, shadows;
+
+    padding: 4%;
+    text-align: justify;
+
+
+}
+
+@keyframes borders {
+    from {
+        border: none
+    }
+
+    to {
+        border: solid 4px #ddb892;
+    }
+}
+
+@keyframes shadows {
+    from {
+        box-shadow: none;
+    }
+
+    to {
+        box-shadow: 10px 10px 10px 10px #e0be9c;
+    }
+}
+
+@keyframes slidein {
+    from {
+        margin-top: 100%;
+    }
+
+    to {
+        margin-top: 0%;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .btn {
+        font-size: 16px;
+    }
+
+    .footer-left-div,
+    .footer-middle-div {
+        border-bottom: solid 2px white;
+        border-right: none;
+    }
+
+    .greeting {
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 46px;
+        /* font-size: 500%; */
+    }
+
+    .heading {
+        font-size: 19px;
+        font-weight: bold;
+    }
+
+    .para-title {
+        font-family: 'Nunito', sans-serif;
+        font-size: 29px;
+    }
+
+
+}
