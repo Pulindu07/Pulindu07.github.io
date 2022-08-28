@@ -70,10 +70,14 @@ body {
     font-size: 36px;
 }
 
+.photo-div {
+    margin: 2% 0;
+}
+
 .profile-photo {
     animation: 2s ease-out 0.2s 1 forwards forwards;
     animation-name: slidein, borders;
-    
+
     border-radius: 100%;
     flex-wrap: wrap;
     float: left;
@@ -88,7 +92,7 @@ body {
 
     padding: 4%;
     text-align: justify;
-    
+
 
 }
 
