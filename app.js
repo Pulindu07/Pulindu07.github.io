@@ -7,7 +7,6 @@ const _ = require("lodash");
 
 
 const app = express();
-
 app.set('view engine', 'ejs');
 
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -26,6 +25,16 @@ will come in handy.`
 
 app.get("/", function (req, res) {
     res.render("about", { bioContent: bio, greeting: greeting, title: title });
+});
+
+app.get("/:target", function (req, res) {
+    const target = _.lowerCase(req.params.target);
+    if (target !== "") {
+        res.render("notFound");
+        app.post("/notFound", function (req, res) {
+            res.redirect("/");
+        });
+    }
 });
 
 
