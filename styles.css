@@ -27,7 +27,8 @@ body {
     text-align: center;
 }
 
-.footer-left-div, .footer-middle-div {
+.footer-left-div,
+.footer-middle-div {
     border-right: solid 2px white;
 }
 
@@ -46,7 +47,8 @@ body {
     color: white;
 }
 
-.heading, .navbar-brand {
+.heading,
+.navbar-brand {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -69,19 +71,56 @@ body {
 }
 
 .profile-photo {
-    height: auto;
-    width: 100%;
-    object-fit: cover;
+    animation: 2s ease-out 0.2s 1 forwards forwards;
+    animation-name: slidein, borders;
+    
     border-radius: 100%;
-    border: solid 4px #ddb892;
-    float: left;
     flex-wrap: wrap;
+    float: left;
+    height: auto;
+    object-fit: cover;
+    width: 100%;
 }
 
-.text {
+.text-div {
+    animation: 2s ease-out 0.5s 1 forwards forwards;
+    animation-name: slidein, shadows;
+
+    padding: 4%;
     text-align: justify;
+    
+
 }
 
+@keyframes borders {
+    from {
+        border: none
+    }
+
+    to {
+        border: solid 4px #ddb892;
+    }
+}
+
+@keyframes shadows {
+    from {
+        box-shadow: none;
+    }
+
+    to {
+        box-shadow: 10px 10px 10px 10px #e0be9c;
+    }
+}
+
+@keyframes slidein {
+    from {
+        margin-top: 100%;
+    }
+
+    to {
+        margin-top: 0%;
+    }
+}
 
 @media (max-width: 991px) {
 
@@ -89,7 +128,8 @@ body {
         font-size: 16px;
     }
 
-    .footer-left-div, .footer-middle-div {
+    .footer-left-div,
+    .footer-middle-div {
         border-bottom: solid 2px white;
         border-right: none;
     }
