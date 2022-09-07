@@ -1,4 +1,5 @@
 <%- include("partials/header.ejs"); -%>
+
     <div class="container">
         <div class="row">
             <div class="col col-lg-6 col-md-12 col-sm-12 map-location"> 
@@ -9,24 +10,25 @@
                     <form action="">
                         <div class="form-label-divs">
                             <label for="firstName" class="label-form"><%= firstName %></label>
-                            <input class="inputs" name="firstName" type="text">
+                            <input class="inputs" name="firstName" type="text" placeholder="John">
                         </div>
                         <div class="form-label-divs">
                             <label for="lastName" class="label-form"><%= lastName %></label>
-                            <input class="inputs" name="lastName" type="text">
+                            <input class="inputs" name="lastName" type="text" placeholder="Doe">
                         </div>
                         <div class="form-label-divs">
                             <label for="email" class="label-form"><%= email %></label>
-                            <input class="inputs" name="email" type="text">
+                            <input class="inputs" name="email" type="text" placeholder="johndoe@example.com">
                         </div>
                         <div class="form-label-divs">
                             <label for="subject" class="label-form"><%= subject %></label>
-                            <input class="inputs" name="subject" type="text">
+                            <input class="inputs" name="subject" type="text" placeholder="Greetings">
                         </div>
                         <div class="form-label-divs">
                             <label for="message" class="label-form"><%= message %></label>
-                            <textarea class="inputs" name="message" type="text" cols="13" rows="6"></textarea>
-                            <button class="btn btn-primary">Send</button>
+                            <textarea class="inputs" name="message" type="text" placeholder="Sample message..." cols="13" rows="6"></textarea>
+                            <!-- <button class="btn btn-primary">Send</button> -->
+                            <input type="submit" value="Send" class="btn btn-primary" onclick="sendMail()">
                         </div>
                     </form>
                 </div>
