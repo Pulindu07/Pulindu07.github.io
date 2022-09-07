@@ -19,6 +19,12 @@ body {
     align-items: center;
 }
 
+.form-label-divs{
+    margin: 9px;
+    padding: 1%;
+    width: 90%;
+}
+
 .footer {
     background-color: #e3c3a3;
     position: relative;
@@ -56,9 +62,25 @@ body {
     padding: 5%;
 }
 
+.inputs{
+    margin: 2px;
+    display: block;
+    width: 100%;
+}
+
+.label{
+    border-bottom: solid 2px black;
+    font-size: 1.4rem;
+    margin: 9px;
+}
+
 .mail {
     text-decoration: none;
     color: black;
+}
+
+.map-location{
+    margin-top: 3%;
 }
 
 .nav-bar {
@@ -68,7 +90,7 @@ body {
 .not-found{
     animation: 2s ease-out 0.2s 1 forwards forwards;
     animation-name: slidein, borders;
-    
+
     background-image:linear-gradient(rgb(243, 185, 124),rgb(236, 197, 153));
     margin: 5%;
     padding: 5% 31%;

@@ -1,0 +1,37 @@
+<%- include("partials/header.ejs"); -%>
+    <div class="container">
+        <div class="row">
+            <div class="col col-lg-6 col-md-12 col-sm-12 map-location"> 
+                <img src="/photos/email.png" alt="Evelop with mail inside" class="email-photo" id="email-photo">
+            </div>
+            <div class="col col-lg-6 col-md-12 col-sm-12">
+                <div class="form-div">
+                    <form action="">
+                        <div class="form-label-divs">
+                            <label for="firstName" class="label-form"><%= firstName %></label>
+                            <input class="inputs" name="firstName" type="text">
+                        </div>
+                        <div class="form-label-divs">
+                            <label for="lastName" class="label-form"><%= lastName %></label>
+                            <input class="inputs" name="lastName" type="text">
+                        </div>
+                        <div class="form-label-divs">
+                            <label for="email" class="label-form"><%= email %></label>
+                            <input class="inputs" name="email" type="text">
+                        </div>
+                        <div class="form-label-divs">
+                            <label for="subject" class="label-form"><%= subject %></label>
+                            <input class="inputs" name="subject" type="text">
+                        </div>
+                        <div class="form-label-divs">
+                            <label for="message" class="label-form"><%= message %></label>
+                            <textarea class="inputs" name="message" type="text" cols="13" rows="6"></textarea>
+                            <button class="btn btn-primary">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include("partials/footer.ejs"); -%>

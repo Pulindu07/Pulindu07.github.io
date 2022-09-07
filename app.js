@@ -23,8 +23,14 @@ I have already enrolled for "The Complete 2022 Web Development Bootcamp" offered
 on Web development. To start my journey as a front-end/ full stack web developer I know these skills 
 will come in handy.`
 
+const formData = ["First Name", "Last Name", "E-mail","Subject", "Message"];
+
 app.get("/", function (req, res) {
     res.render("about", { bioContent: bio, greeting: greeting, title: title });
+});
+
+app.get("/contact", function (req, res) {
+    res.render("contact", { firstName: formData[0], lastName: formData[1], email: formData[2], subject: formData[3], message: formData[4] });
 });
 
 app.get("/:target", function (req, res) {
