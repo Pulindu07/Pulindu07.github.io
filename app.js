@@ -26,23 +26,6 @@ on Web development. To start my journey as a front-end/ full stack web developer
 will come in handy.`
 
 const formData = ["First Name", "Last Name", "E-mail", "Subject", "Message"];
-var Email = { send: function (a) { return new Promise(function (n, e) { a.nocache = Math.floor(1e6 * Math.random() + 1), a.Action = "Send"; var t = JSON.stringify(a); Email.ajaxPost("https://smtpjs.com/v3/smtpjs.aspx?", t, function (e) { n(e) }) }) }, ajaxPost: function (e, n, t) { var a = Email.createCORSRequest("POST", e); a.setRequestHeader("Content-type", "application/x-www-form-urlencoded"), a.onload = function () { var e = a.responseText; null != t && t(e) }, a.send(n) }, ajax: function (e, n) { var t = Email.createCORSRequest("GET", e); t.onload = function () { var e = t.responseText; null != n && n(e) }, t.send() }, createCORSRequest: function (e, n) { var t = new XMLHttpRequest; return "withCredentials" in t ? t.open(e, n, !0) : "undefined" != typeof XDomainRequest ? (t = new XDomainRequest).open(e, n) : t = null, t } };
-
-function sendEmail() {
-    Email.send({
-        Host: "smtp.gmail.com",
-        Username: "pulindujanith@gmail.com",
-        Password: "65649E5589F47B4C3732E20593F69F8C3AEB",
-        To: 'pulindujanith@gmail.com',
-        From: "you@isp.com",
-        Subject: "This is the subject",
-        Body: "And this is the body"
-    }).then(
-        message => alert(message)
-    );
-    console.log("Hi");
-}
-
 app.get("/", function (req, res) {
     res.render("about", { bioContent: bio, greeting: greeting, title: title });
 });
