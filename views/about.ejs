@@ -1,0 +1,24 @@
+<%- include("partials/header.ejs"); -%>
+
+<div class="container img-plus-heading">
+    <div class="row">
+        <div class="col-lg-5 col-md-12 photo-div">
+            <img src="/photos/profile.png" alt="Profile photo" class="profile-photo" id="photo">
+        </div>
+        <div class="col-lg-7 col-md-12 text-div">
+            <h1 class="greeting"><%= greeting %></h1>
+            <h3 class="para-title"><%= title %></h3>
+            <p class="wording"><%= bioContent%></p>
+
+            <div class="container-buttons">
+                <button class="btn btn-lg btn-dark">Resume</button>
+                <button class="btn btn-lg btn-secondary">Projects</button>
+                <button class="btn btn-lg btn-light">Contact</button>
+            </div>
+
+        </div>
+    </div>
+  </div>
+
+
+  <%- include("partials/footer"); -%>
