@@ -31,7 +31,7 @@ app.get("/", function (req, res) {
 });
 
 app.get("/contact", function (req, res) {
-    res.render("contact", { firstName: formData[0], lastName: formData[1], email: formData[2], subject: formData[3], message: formData[4] });
+    res.sendFile(__dirname+'/views/contact.html');
 });
 
 app.get("/:target", function (req, res) {
