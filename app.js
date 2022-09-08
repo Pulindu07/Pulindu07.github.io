@@ -30,13 +30,19 @@ app.get("/", function (req, res) {
     res.render("about", { bioContent: bio, greeting: greeting, title: title });
 });
 
-app.get("/contact", function (req, res) {
-    res.sendFile(__dirname+'/views/contact.html');
-});
+
 
 app.get("/:target", function (req, res) {
     const target = _.lowerCase(req.params.target);
-    if (target !== "" && target !== "sendemail") {
+    if (target === "contact") {
+        res.sendFile(__dirname + '/views/contact.html');
+    } else if (target === "about") {
+        res.render("about", { bioContent: bio, greeting: greeting, title: title });
+    } else if (target === "projects") {
+        res.render("projects");
+    } else if (target === "resume") {
+        res.render("resume");
+    } else {
         res.render("notFound");
         app.post("/notFound", function (req, res) {
             res.redirect("/");
@@ -48,7 +54,6 @@ app.post("/sendemail", function (req, res) {
     console.log("Inside post sendemail");
     sendEmail();
 });
-
 
 let port = process.env.PORT;
 

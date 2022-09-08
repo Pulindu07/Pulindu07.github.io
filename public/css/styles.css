@@ -1,9 +1,13 @@
 body {
     background-color: #e6ccb2;
+    align-items: center;
 }
-
+/* a{
+    text-decoration: none;
+    color: #e0be9c;
+} */
 .btn {
-    width: 31%;
+    width: auto;
     border: solid white 1px;
     border-radius: 50px 50px 50px 50px;
     font-size: 25px;
@@ -23,11 +27,6 @@ body {
     width: 90%;
     height: auto;
 }
-.form-label-divs{
-    margin: 3px;
-    padding: 1%;
-    width: 80%;
-}
 
 .footer {
     background-color: #e3c3a3;
@@ -42,6 +41,15 @@ body {
     border-right: solid 2px white;
 }
 
+.form-div{
+    animation: 2s ease-out 0.3s 1 forwards forwards;
+    animation-name: slidein;
+}
+.form-label-divs{
+    margin: 3px;
+    padding: 1%;
+    width: 80%;
+}
 .greeting {
     font-family: 'Noto Sans', sans-serif;
     font-size: 58px;
@@ -86,7 +94,10 @@ body {
     color: black;
 }
 
-.map-location{
+.mail-img{
+    animation: 2s ease-out 0.3s 1 forwards forwards;
+    animation-name: slidein;
+
     margin-top: 3%;
 }
 
@@ -129,6 +140,30 @@ body {
     height: auto;
     object-fit: cover;
     width: 100%;
+}
+.project-div{
+    animation: 2s ease-out 0.3s 1 forwards forwards;
+    animation-name: slidein;
+
+}
+.project-photo{
+    animation: 2s ease-out 0.2s 1 forwards forwards;
+    animation-name: slidein;
+
+    margin-bottom: 2%;
+    width: 50%;
+    height: auto;
+}
+.resume-photo {
+    animation: 2s ease-out 0.2s 1 forwards forwards;
+    animation-name: slidein, borders;
+
+    flex-wrap: wrap;
+    height: auto;
+    object-fit: cover;
+    margin-left: 4.6%;
+    margin-bottom: 2%;
+    width: 90%;
 }
 
 .text-div {
@@ -197,6 +232,13 @@ body {
     .para-title {
         font-family: 'Nunito', sans-serif;
         font-size: 29px;
+    }
+
+    .project-photo{
+    
+        margin-bottom: 2%;
+        width: 100%;
+        height: auto;
     }
 
 
