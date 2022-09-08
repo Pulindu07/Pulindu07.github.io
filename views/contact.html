@@ -43,9 +43,21 @@
                 emailjs.send("service_ob9hmr5", "template_mx9n10a", templateParams).then(function (response) {
                     console.log('SUCCESS!', response.status, response.text);
                     alert("Message sent successful!");
+                    document.getElementById("first-name").value = "";
+                    document.getElementById("last-name").value = "";
+                    document.getElementById("to-name").value = "";
+                    document.getElementById("mail-subject").value = "";
+                    document.getElementById("message-body").value = "";
+                    document.getElementById("reply-to").value = "";
                 }, function (error) {
                     console.log('FAILED...', error);
                     alert("Oops server busy. Please try again later!");
+                    document.getElementById("first-name").value = "";
+                    document.getElementById("last-name").value = "";
+                    document.getElementById("to-name").value = "";
+                    document.getElementById("mail-subject").value = "";
+                    document.getElementById("message-body").value = "";
+                    document.getElementById("reply-to").value = "";
                 });
             });
         }
