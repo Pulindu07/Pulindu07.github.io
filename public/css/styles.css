@@ -20,10 +20,18 @@ body {
     margin-top: 36px;
 }
 
-.container {
+.container-projects {
     align-items: center;
+    width: 60%;
+    margin: auto;
+    font-size: 19px;
 }
-.email-photo{
+.container-projects{
+    text-align: justify;
+}
+
+
+.email-photo {
     width: 90%;
     height: auto;
 }
@@ -41,15 +49,17 @@ body {
     border-right: solid 2px white;
 }
 
-.form-div{
+.form-div {
     animation: 2s ease-out 0.3s 1 forwards forwards;
     animation-name: slidein;
 }
-.form-label-divs{
+
+.form-label-divs {
     margin: 3px;
     padding: 1%;
     width: 80%;
 }
+
 .greeting {
     font-family: 'Noto Sans', sans-serif;
     font-size: 58px;
@@ -74,7 +84,7 @@ body {
     padding: 5%;
 }
 
-.inputs{
+.inputs {
     /* margin: 3px; */
     margin-bottom: 0;
     display: block;
@@ -94,7 +104,7 @@ body {
     color: black;
 }
 
-.mail-img{
+.mail-img {
     animation: 2s ease-out 0.3s 1 forwards forwards;
     animation-name: slidein;
 
@@ -105,17 +115,18 @@ body {
     margin-bottom: 16px;
 }
 
-.not-found{
+.not-found {
     animation: 2s ease-out 0.2s 1 forwards forwards;
     animation-name: slidein, borders;
 
-    background-image:linear-gradient(rgb(243, 185, 124),rgb(236, 197, 153));
+    background-image: linear-gradient(rgb(243, 185, 124), rgb(236, 197, 153));
     margin: 5%;
     padding: 5% 31%;
     box-shadow: 10px 10px 20px 10px rgb(99, 97, 96);
     text-align: center;
 }
-.not-found-heading{
+
+.not-found-heading {
     font-family: 'Noto Sans', sans-serif;
     font-size: 4rem;
     font-weight: bold;
@@ -141,19 +152,26 @@ body {
     object-fit: cover;
     width: 100%;
 }
-.project-div{
+
+.project-div {
     animation: 2s ease-out 0.3s 1 forwards forwards;
     animation-name: slidein;
 
+    border-bottom: solid 3px black;
+    margin-bottom: 16px;
+
 }
-.project-photo{
+
+.project-photo {
     animation: 2s ease-out 0.2s 1 forwards forwards;
     animation-name: slidein;
 
     margin-bottom: 2%;
-    width: 50%;
-    height: auto;
+    width: 700px;
+    height: 300px;
+    object-fit: contain;
 }
+
 .resume-photo {
     animation: 2s ease-out 0.2s 1 forwards forwards;
     animation-name: slidein, borders;
@@ -211,7 +229,9 @@ body {
     .btn {
         font-size: 16px;
     }
-
+    .container,.container-projects {
+        width: 80%;
+    }
     .footer-left-div,
     .footer-middle-div {
         border-bottom: solid 2px white;
@@ -234,8 +254,8 @@ body {
         font-size: 29px;
     }
 
-    .project-photo{
-    
+    .project-photo {
+
         margin-bottom: 2%;
         width: 100%;
         height: auto;
